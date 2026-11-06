@@ -1,4 +1,4 @@
-package exception;
+package exceptions;
 
 /**
  * Signals that an employee ID is not registered in the system.

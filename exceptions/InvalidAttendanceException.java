@@ -1,9 +1,9 @@
-package exception;
+package exceptions;
 
 /**
- * Signals an attempt to register an employee ID that is already in use.
+ * Signals an attendance operation that violates the attendance rules.
  */
-public class EmployeeAlreadyExistsException extends Exception {
+public class InvalidAttendanceException extends Exception {
     /** Serialization identifier for this exception class. */
     private static final long serialVersionUID = 1L;
 
@@ -12,7 +12,7 @@ public class EmployeeAlreadyExistsException extends Exception {
      *
      * @param message the reason the exception was raised
      */
-    public EmployeeAlreadyExistsException(String message) {
+    public InvalidAttendanceException(String message) {
         super(message);
     }
 }
